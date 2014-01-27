@@ -1,0 +1,85 @@
+	function submitEdits() {
+		$('#contentArea').attr("contenteditable", "false");
+		$('#contentArea').attr("class", "noneditable");
+		document.frm.submit();
+	}
+
+	function makeEditable() {
+		$('#contentArea').attr("class", "editable");
+
+		tinymce.init({
+			selector : 'div.editable',
+entity_encoding: "raw",
+			plugins : ["advlist autolink lists link image charmap print preview anchor", "searchreplace visualblocks code fullscreen", "insertdatetime media table contextmenu paste"],
+			toolbar : "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image",
+			autosave_ask_before_unload : false
+		});
+		
+		$("#submitLink").css({"visibility":"visible"});
+	}
+
+        function accessFileUploader() {
+		$('#login_data').attr("value", "<?php echo $_COOKIE['login'] ?>");
+		$('#password_data').attr("value", "<?php echo $_COOKIE['password'] ?>");
+		$('#authenticationCorrect_data').attr("value", "<?php echo $_COOKIE['authenticationCorrect'] ?>");
+                document.uploadFilesLink.submit();
+        }
+
+        function accessProfileAdder() {
+		$('#login_data2').attr("value", "<?php echo $_COOKIE['login'] ?>");
+		$('#password_data2').attr("value", "<?php echo $_COOKIE['password'] ?>");
+		$('#authenticationCorrect_data2').attr("value", "<?php echo $_COOKIE['authenticationCorrect'] ?>");
+                document.addProfileLink.submit();
+        }
+
+        function labMemberPageLink(profilePage) {
+                // form action is changed here to update which page should be written to when a user edit occurs
+                $('#urlPath').attr("value", profilePage);
+                // New content is loaded in the body area of the site
+                $('#contentArea').load(profilePage);
+        }
+</script>
+</head>
+
+	<body class="background">
+		<div id="main">
+			<div id="header-w">
+				<div id="header">
+					<div class="topmenu">
+						<div class="topleft"></div><div class="topright">
+
+						</div>
+						<div class="topright2">
+							<!-- Social Buttons -->
+							<div id="bookmark">
+								<div id="addthis">
+									<div class="addthis_toolbox addthis_default_style addthis_16x16_style">
+										<a class="addthis_button_facebook addthis_button_preferred_1 at300b" title="Facebook" href="http://129.219.108.56/~diegolab/#"><span class="at16nc at300bs at15nc at15t_facebook at16t_facebook"><span class="at_a11y">Share on facebook</span></span></a>
+										<a class="addthis_button_twitter addthis_button_preferred_2 at300b" title="Tweet" href="http://129.219.108.56/~diegolab/#"><span class="at16nc at300bs at15nc at15t_twitter at16t_twitter"><span class="at_a11y">Share on twitter</span></span></a>
+										<a class="addthis_button_email addthis_button_preferred_3 at300b" target="_blank" title="Email" href="http://129.219.108.56/~diegolab/#"><span class="at16nc at300bs at15nc at15t_email at16t_email"><span class="at_a11y">Share on email</span></span></a>
+										<a class="addthis_button_print addthis_button_preferred_4 at300b" title="Print" href="http://129.219.108.56/~diegolab/#"><span class="at16nc at300bs at15nc at15t_print at16t_print"><span class="at_a11y">Share on print</span></span></a>
+										<a class="addthis_button_compact at300m" href="http://129.219.108.56/~diegolab/#"><span class="at16nc at300bs at15nc at15t_compact at16t_compact"><span class="at_a11y">More Sharing Services</span></span></a>
+										<div class="atclear"></div>
+									</div>
+									<script type="text/javascript" src="./Javascript/addthis_widget.js"></script>
+									<div id="_atssh" style="visibility: hidden; height: 1px; width: 1px; position: absolute; z-index: 100000;">
+										<iframe id="_atssh935" title="AddThis utility frame" style="height: 1px; width: 1px; position: absolute; z-index: 100000; border: 0px; left: 0px; top: 0px;" src="./Javascript/sh143.html"></iframe>
+									</div><script type="text/javascript" src="./Javascript/core116.js"></script>
+								</div>
+							</div><!-- END-->
+						</div>
+					</div>
+
+					<a href="./Welcome to the D.I.E.G.O. Lab.html"> <img src="./Images/diegolablogosmall4.png" border="0" class="logo"> </a>
+					<div class="slogan"></div>
+
+				</div>
+			</div>
+
+			<div class="shadow">
+				<div id="wrapper">
+					<div id="navr">
+						<div class="searchbutton"></div>
+						<div id="navl">
+							<div id="nav">
+								<div id="nav-left">

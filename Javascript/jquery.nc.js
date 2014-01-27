@@ -1,0 +1,1 @@
+fcjQuery = jQuery.noConflict();
