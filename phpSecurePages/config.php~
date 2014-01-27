@@ -83,8 +83,8 @@ $cfgDbUserIDfield = 'primary_key';        // MySQL field name containing user id
 $useData = true;                          // choose between using a database or data as input
 
 /* this data is necessary if no database is used */
-$cfgLogin[1] = 'sample';                        // login word (username)
-$cfgPassword[1] = 'sample';                     // password
+$cfgLogin[1] = 'diegolab';                        // login word (username)
+$cfgPassword[1] = 'DiegoLab1';                     // password
 $cfgUserLevel[1] = '';                    // user level
   // Choose a number which represents the category of this users authorization level.
   // Leave empty if authorization levels are not used.
@@ -98,3 +98,17 @@ $cfgUserID[1] = '1';                       // user identification
 /*             End of phpSecurePages Configuration            */
 /**************************************************************/
 ?>
+
+<?php 
+$cfgLogin[2] = 'nmsutton';
+$cfgPassword[2] = 'nmsutton';
+$cfgUserLevel[2] = '';
+$cfgUserID[2] = '';
+?> 
+
+<?php 
+$cfgLogin[3] = 'newuser';
+$cfgPassword[3] = 'D2ov4TTe2Aoo2sA';
+$cfgUserLevel[3] = '';
+$cfgUserID[3] = '';
+?> 
