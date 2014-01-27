@@ -25,6 +25,13 @@ entity_encoding: "raw",
                 document.uploadFilesLink.submit();
         }
 
+        function accessDeveloperGuide() {
+		$('#login_data').attr("value", "<?php echo $_COOKIE['login'] ?>");
+		$('#password_data').attr("value", "<?php echo $_COOKIE['password'] ?>");
+		$('#authenticationCorrect_data').attr("value", "<?php echo $_COOKIE['authenticationCorrect'] ?>");
+                document.developerGuideLink.submit();
+        }
+
         function accessProfileAdder() {
 		$('#login_data2').attr("value", "<?php echo $_COOKIE['login'] ?>");
 		$('#password_data2').attr("value", "<?php echo $_COOKIE['password'] ?>");

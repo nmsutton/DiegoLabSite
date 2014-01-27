@@ -1373,7 +1373,7 @@ a:hover {color:white; text-decoration: none; };
 a:active {color:white; text-decoration: underline; };
 background:#242424;
 border:1px solid #242424;padding:1px;text-decoration: none;background: -webkit-gradient(linear, left top, left bottom, from(#575757), to(#242424));color:white;
-top:-29px;
+top:-26px;
 position:relative;
 min-width:175px;
 min-height:25px;
@@ -1428,6 +1428,6 @@ background:#242424;
 border:1px solid #242424;padding:1px;text-decoration: none;background: -webkit-gradient(linear, left top, left bottom, from(#575757), to(#242424));color:white;
 top:-20px;
 position:relative;
-min-width:150px;
+min-width:175px;
 min-height:25px;
 }

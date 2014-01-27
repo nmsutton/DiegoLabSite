@@ -73,9 +73,9 @@ echo "<input type='hidden' name='authenticationCorrect' value='true'>";
 	$_COOKIE['login'] = $login;
 	$_COOKIE['password'] = $password;
 	$_COOKIE['authenticationCorrect'] = 'true';
-	setcookie("login", $login, time()+60, "/","", 0);
-	setcookie("password", $password, time()+60, "/","", 0);
-	setcookie("authenticationCorrect", "true", time()+60, "/","", 0);
+	setcookie("login", $login, time()+1200, "/","", 0);
+	setcookie("password", $password, time()+1200, "/","", 0);
+	setcookie("authenticationCorrect", "true", time()+1200, "/","", 0);
 ?>
 </form>
 <script language="JavaScript">
