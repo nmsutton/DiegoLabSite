@@ -18,6 +18,10 @@ Hello and thank you for choosing to develop with this site. The file structure i
 
 Editing Html
 
+Access to the Site Manager:
+
+You will need the superuser username/password to log into the site manager at https://webhost290.asu.edu:2222/ to be able to have direct access to html and other site files. Please contact one of the individuals listed on the Contact page on the site to get the superuser credentials if you want them. The site is in the /domains/diego.asu.edu/public_html/NewSite/ directory.
+
 Site Backups:
 
 Before editing the source code in the site please make a backup of its contents. One preferred way to backup the site is to use the site manager (DirectAdmin) and go to the file manager. Enter the base directory of the site (where Welcome.php is). On the bottom of the file manager click Empty Clipboard. On the top right click the Select link and all files should be selected. Click Add To Clipboard at the page bottom. Enter the Downloads directory. At the page bottom where it is written Compress Clipboard enter a name for a zip archive file and click create. Download the created file. Now you have a backup in the downloaded file. Delete the file you made after you download it. A second way to backup the site is to click Create or Restore Backups from the DirectAdmin main menu. The problem with that is that every file is backed up even old site directories and that can add another 50-100Mb file which can be downloaded and deleted from the server but if left there takes up extra room.
