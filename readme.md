@@ -18,6 +18,10 @@ Hello and thank you for choosing to develop with this site. The file structure i
 
 Editing Html
 
+Site Backups:
+
+Before editing the source code in the site please make a backup of its contents. One preferred way to backup the site is to use the site manager (DirectAdmin) and go to the file manager. Enter the base directory of the site (where Welcome.php is). On the bottom of the file manager click Empty Clipboard. On the top right click the Select link and all files should be selected. Click Add To Clipboard at the page bottom. Enter the Downloads directory. At the page bottom where it is written Compress Clipboard enter a name for a zip archive file and click create. Download the created file. Now you have a backup in the downloaded file. Delete the file you made after you download it. A second way to backup the site is to click Create or Restore Backups from the DirectAdmin main menu. The problem with that is that every file is backed up even old site directories and that can add another 50-100Mb file which can be downloaded and deleted from the server but if left there takes up extra room.
+
 Creating New Pages:
 
 This site is meant to be practical to customize with its basic file structure, no cms, and reuse of shared page content on all pages.  A new main page on the site can be created based on using an example page for a template such as Publications2.php.  Copy the contents of that file into a new file and customize it based on the purpose of the new page.
