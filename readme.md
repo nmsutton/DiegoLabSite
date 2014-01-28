@@ -20,7 +20,7 @@ Editing Html
 
 Access to the Site Manager:
 
-You will need the superuser username/password to log into the site manager at https://webhost290.asu.edu:2222/ to be able to have direct access to html and other site files. Please contact one of the individuals listed on the Contact page on the site to get the superuser credentials if you want them. The site is in the /domains/diego.asu.edu/public_html/NewSite/ directory.
+You will need the superuser username/password to log into the site manager at https://webhost290.asu.edu:2222/ to be able to have direct access to html and other site files. Please contact one of the individuals listed on the Contact page on the site to get the superuser credentials if you want them. The site is in the /domains/diego.asu.edu/public_html/NewSite/ directory (Public Html Folder->/NewSite/)..
 
 Site Backups:
 
