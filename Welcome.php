@@ -35,7 +35,7 @@ echo '
 										<style type="text/css">
 											.featureCarousel {
 												width:700px;
-												height:480px;
+												height:270px;
 											}
 										</style>
 										<div id="featureCarousel88" class="featureCarousel">

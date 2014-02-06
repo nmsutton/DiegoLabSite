@@ -166,9 +166,9 @@ echo '<div id="error">'.$phpSP_message.'</div>';
 				if(isset($_COOKIE["authenticationCorrect"]) && $_COOKIE["authenticationCorrect"]=='true') {
 				echo '<form id="entry" action="phpSecurePages/secure.php" METHOD="post" onSubmit="return checkData()">';
 				echo '<input type="hidden" name="logout" value="true" class="field required" />';
-				echo '<div class="accoutOptions" style="text-align:center;"><br>Logged in as: '.$_COOKIE["login"];
+				echo '<div class="accoutOptions" style="text-align:left;"><br>Logged in as: '.$_COOKIE["login"];
 				echo '<div class="submit">
-            <button type="submit">Log out</button>
+            <button type="submit" style="position:relative;right:-50px">Log out</button>
             </form><br><br><br>';
 				} 
 				else {
@@ -198,14 +198,26 @@ less (or un-) readable). -->
 </div>
 <p class="accountOptions">
 <br>
-<br><a href="mailto:Awjnonq421005@gmail.com?subject=[Lab Website Account] Request for new account&body=Hi,\r\nMy name is <firstname> <lastname>.  I know about the diego lab through: <description>.  (Optional but preferred: I am affiliated with the diego lab through <description>).\r\n\r\nPlease send me details about creating a new account.\r\n\r\nI will check my spam folder in case the response to this message is sent there accidentally.">New Account</a>
-<br><a href="mailto:Awjnonq421005@gmail.com?subject=[Lab Website Password] Request for password reset&body=Hi, Please let me know how to reset my site password.  * Note from webmaster: if you are able to create a new account to gain editing access to the site.  This can fix the issue in case I do not respond quickly. *">Reset Password</a>
-<br><?php echo $strPoweredBy; ?>
-<A HREF="http://www.phpSecurePages.com" TITLE="phpSecurePages <?php echo $strInfo; ?>" TARGET="_blank" CLASS="link">phpSecurePages</A>
+<br><a style='font-size:14pt;' href='javascript:document.accountRequestForm.submit();' onlick="javascript:document.accountRequestForm.submit();">New Account</a>
+<br><a style='font-size:14pt;' href="javascript:document.forgotEmailForm.submit();" onlick="javascript:document.forgotEmailForm.submit();">Reset Password</a>
+<br>
+<A  style="font-size:14pt;" HREF="http://www.phpSecurePages.com" TITLE="phpSecurePages <?php echo $strInfo; ?>" TARGET="_blank" CLASS="link"><?php echo $strPoweredBy; ?> phpSecurePages</A>
 <!-- ------ Copyright line ends here ------ -->
 <br>
 <br>
 <br>
+<form action="emailForm.php" class="accountRequestForm" name="accountRequestForm" id="accountRequestForm" method='post'>
+<input type='hidden' name='emailTo' value='abhalla@asu.edu'>
+<input type='hidden' name='emailSubject' value='[Lab Website Account] Request for new account'>
+<input type='hidden' name='emailBodyContent' value='Hi,&#13;&#10;&#13;&#10;Please send me details about creating a new account.&#13;&#10;&#13;&#10;I will check my spam folder in case the response to this message is sent there accidentally.'>
+<input type='hidden' name='emailHeader' value='CC: Awjnonq421005@gmail.com'>
+</form>
+<form action="emailForm.php" class="forgotEmailForm" name="forgotEmailForm" id="forgotEmailForm" method='post'>
+<input type='hidden' name='emailTo' value='abhalla@asu.edu'>
+<input type='hidden' name='emailSubject' value='[Lab Website Password] Request for password reset'>
+<input type='hidden' name='emailBodyContent' value='Hi,&#13;&#10;&#13;&#10;Please let me know how to reset my site password.&#13;&#10;&#13;&#10;Note from webmaster: Create a new account if you are able to in order to gain editing access to the site.  This can fix the issue in case I do not respond quickly.'>
+<input type='hidden' name='emailHeader' value='CC: Awjnonq421005@gmail.com'>
+</form>
 </p>
 </div>
 
